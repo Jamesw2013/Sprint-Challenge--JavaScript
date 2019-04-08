@@ -26,17 +26,33 @@ In meeting the minimum viable product (MVP) specifications listed below, you sho
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions.
 
-Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
+- [x] Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+`.forEach` will loop through an array and allow you to do things with each item. `.map` will perform similar to `.forEach`, but will produce a new array.
+
 2. What is the difference between a function and a method?
+
+A funtion is independently declared outside of an object. A method is also a function, but it is declared inside an object, and usable from this object.
 
 3. What is closure?
 
+The ability to make global variables local. A function within a function.
+
 4. Describe the four rules of the 'this' keyword.
 
+Window Binding - This, when used in a global context, will refer to the Window object.
+
+New Binding - When using a constructor function to create objects, this refers to the specific object being created.
+
+Implicit Binding - For functions called on objects, the object before the dot in the call will be `this`.
+
+Explicit Binding = Using JavaScript's call or apply method to point to what `this` should refer to.
+
 5. Why do we need super() in an extended class?
+
+You need super() to access the inherited attributes or to establish them. Without the `super` keyword the extended class does not build upon the original class. For example, if name and age was in the parent class w/o the `super` keyword, name and age would be undefined. 
 
 ## Project Set up
 
